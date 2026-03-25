@@ -1,4 +1,4 @@
-# Aura: Vision-Enabled Autonomous Voice Agent 🌌
+# Aura: Vision-Enabled Autonomous Voice Agent 
 
 ![Aura Dashboard](https://via.placeholder.com/800x400.png?text=Aura+Vision-Enabled+Voice+Agent)
 
@@ -34,7 +34,8 @@ To run Aura locally, you must securely manage your API keys using environment va
 
    npm install
 
-Secure API Key Management (Environment Variables):
+3. **Secure API Key Management (Environment Variables):**
+
 Create a .env.local file in the root directory. Do not commit this file. Add your keys:
 
 Code snippet
@@ -44,7 +45,5 @@ LIVEKIT_API_KEY="your_livekit_key"
 LIVEKIT_API_SECRET="your_livekit_secret"
 MURF_API_KEY="your_murf_key"
 
-Run the development server:
-
-
-npm run dev
+4. **Run the development server:**
+       npm run dev
