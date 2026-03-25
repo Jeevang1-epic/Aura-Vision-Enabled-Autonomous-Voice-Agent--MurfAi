@@ -1,7 +1,5 @@
 # Aura: Vision-Enabled Autonomous Voice Agent 
 
-![Aura Dashboard](https://via.placeholder.com/800x400.png?text=Aura+Vision-Enabled+Voice+Agent)
-
 **Aura** is a sub-second, vision-enabled autonomous voice assistant built specifically for desktop power users. Unlike standard consumer AIs locked to mobile devices, Aura lives natively alongside your professional workflows, capturing high-resolution screen context to see what you see, hear what you say, and act before you ask.
 
 **[Watch the Aura Demo Video Here](https://youtu.be/1bLyYdwCWiw)**
