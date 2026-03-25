@@ -1,0 +1,9 @@
+{
+  "name": "Aura: Vision-Enabled Autonomous Voice Agent",
+  "description": "A cinematic, AI-powered voice agent with vision capabilities, built for high-performance real-time interactions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ]
+}

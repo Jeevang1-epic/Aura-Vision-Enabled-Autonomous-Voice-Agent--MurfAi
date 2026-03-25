@@ -1,0 +1,38 @@
+{
+  "entities": {
+    "Session": {
+      "title": "Session",
+      "description": "A voice/vision interaction session",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The UID of the user who started the session" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the session started" },
+        "status": { "type": "string", "enum": ["active", "completed"], "description": "The current status of the session" }
+      },
+      "required": ["userId", "createdAt", "status"]
+    },
+    "Log": {
+      "title": "Log",
+      "description": "A specific action or interaction log within a session",
+      "type": "object",
+      "properties": {
+        "sessionId": { "type": "string", "description": "The ID of the parent session" },
+        "timestamp": { "type": "string", "format": "date-time", "description": "When the log was created" },
+        "type": { "type": "string", "enum": ["voice", "vision", "system"], "description": "The type of log entry" },
+        "content": { "type": "string", "description": "The text content or description of the action" },
+        "metadata": { "type": "object", "description": "Additional data like vision frame thumbnails" }
+      },
+      "required": ["sessionId", "timestamp", "type", "content"]
+    }
+  },
+  "firestore": {
+    "/sessions/{sessionId}": {
+      "schema": "Session",
+      "description": "Root collection for user sessions"
+    },
+    "/sessions/{sessionId}/logs/{logId}": {
+      "schema": "Log",
+      "description": "Subcollection for session-specific logs"
+    }
+  }
+}
